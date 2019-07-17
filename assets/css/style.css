@@ -1,37 +1,213 @@
-header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    padding: 30px 0px 30px 100px;
+/* style header section with name and navigation links */
+
+html, body {
+    height: 100%;
 }
 
-h1 {
-    display: inline;
-    padding: 20px;
+.header {
+    width: 960px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#name {
+    display: block;
+    float: left;
+    width: 260px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.9em;
+    font-weight: bold;
     background-color: #4aaaa5;
     color: white;
-    float: left;
-
 }
 
-h2 {
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 30px 0px 20px 100px;
-    font-size: 25px;
-}
-h3 {
+#navigation {
     display: inline;
-    padding: 20px;
-}
-
-.navi {
+    padding: 21px 0px 21px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     color: #777777;
-    float: right;
 }
 
-about {
-    padding: 100px;
+#about-nav {
+    float: right;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    border-color: lightgrey;
+}
 
+#portfolio-nav {
+    float: right;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    border-color: lightgrey;
+}
+
+#contact-nav {
+    float: right;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}   
+
+/* style links visited, unvisited and hover */
+
+a:link {
+    text-decoration: none;
+    background-color: transparent;
+    color: lightgrey;
+}
+
+a:visited {
+    text-decoration: none;
+    background-color: transparent;
+    color: lightgrey;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4aaaa5;
+}
+
+/* style the about me page */
+
+.main {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-top: solid 3px lightgrey;
+    /* background-color: rgb(235,235,235); */
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/papyrus.png);
+}
+
+.the-meat {
+    width: 960px;
+    height: 900px;
+    background-color: white;
+    margin: 30px auto 0px auto;
+    border: solid 2px lightgrey;
+}
+
+#page-title {
+    width: 900px;
+    margin: auto;
+    display: block;
+    padding: 20px 0px 20px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #4aaaa5;
+    border-bottom: solid lightgrey 2px;
+}
+
+#pic {
+    display: block;
+    float: left;
+    width: 330px;
+    margin: 30px 20px 20px 30px;
+    border-top: double 25px #4aaaa5;
+    border-bottom: double 25px #4aaaa5;
+}
+
+#para {
+    display: block;
+    clear: right;
+    width: 900px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* style the portfolio page */
+
+#container {
+    display: inline-block;
+    position: relative;
+    margin: 30px;    
+  }
+  
+.p-name {
+    display: inline-block;
+    position: absolute;
+    margin: -80px -300px 0px 0px;
+    width: 400px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    background-color: #4aaaa5;
+    font-size: 1.5em;
+    color: white;
+    z-index: 0;
+    border: solid grey 2px;
+  }
+
+.p-pic {
+    display: block;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    z-index: -1;
+    border: solid grey 2px;
+}
+
+/* style the contact page */
+
+form {
+    margin: 30px;
+}
+
+.QA {
+    margin: 20px 0px 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+
+}
+#input-small {
+    width: 895px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 0.8em;
+}
+
+textarea {
+    width: 895px;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid 1px rgb(205,205,205);
+    resize: none;
+    font-size: 0.8em;
+}
+
+/* style the footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0px 5px 0px;
+    background-color: rgb(100,100,100);
+    border-top: solid 10px #4aaaa5;
+    color: white;
+    text-align: center;
 }

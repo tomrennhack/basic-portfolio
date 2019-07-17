@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>
             Tom Rennhack Bio
         </title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    
     <body>
-        <h1>
-            Tom Rennhack
-        </h1>
-        <h3 class="navi">
-            About
-        </h3>
-        <h3 class="navi">
-            Portfolio
-        </h3>
-        <h3 class="navi">
-            Contact
-        </h3>
-        <h2>
-            About Me
-        </h2>
-        <h2>
-            Contact
-        </h2>
-        <form>
-            Name:<br>
-            <input type="text" name="name"><br>
-            Email:<br>
-            <input type="text" name="email"><br>
-            Message:<br>
-            <input type="text" name="message">
-        </form>
-        <button type="button" form="form-1" value="Submit">
-            Submit
-        </button>
+        <!-- header containing my name and the main navigation to the right  -->
+        <section class="header">
+            <h1 id="name">Tom Rennhack</h1>
+            <ul id="navigation">
+                <li id="contact-nav">
+                        <a href="contact.html">Contact</a>
+                </li>
+                <li id="portfolio-nav">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li id="about-nav"> 
+                        <a href="index.html">About</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- section containing the part below the heading -->
+        <section class="main">
+            
+            <!-- section containing the contact form -->
+            <div class="the-meat">
+
+                <!-- enter the Contact page title -->
+                <h2 id="page-title">Contact</h2>
+            
+            <!-- form development -->
+            <form>
+                <div class="QA">
+                    Name:<br>
+                    <input type="text" name="name" id="input-small"><br>
+                </div>
+                <div class="QA">
+                    Email:<br>
+                    <input type="text" name="email" id="input-small"><br>
+                </div>
+                <div class="QA">
+                    Message:<br>
+                    <textarea></textarea>
+                </div>            
+            </form>
+            
+            <button type="button" form="form-1" value="Submit" id="contact-submit">
+                Submit
+            </button>
+            </div>
+        </section>
+
+        <!-- enter a footer here -->
+        <footer>
+                First homework assignment for Full Stack Flex Coding Boot Camp 2019.
+        </footer>  
     </body>
 </html>

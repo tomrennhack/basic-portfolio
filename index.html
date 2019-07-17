@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>
             Tom Rennhack Bio
         </title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
+    
     <body>
-        <header>
-            <h1>
-                Tom Rennhack
-            </h1>
-            <h3 class="navi">
-                About
-            </h3>
-            <h3 class="navi">
-                Portfolio
-            </h3>
-            <h3 class="navi">
-                Contact
-            </h3><br>
-        </header>
-            <h2>
-                About Me
-            </h2><br>
-        <about>
-            <img src="assets/images/profile pic.jpg" width="200px">
-            <p>
-                I was born and raised in New Jersey and have an affinity for the Jersey Shore. Growing up I learned to play guitar and loved forming bands and learning songs with my friends. I was into professional sports but never got into playing them, so I spent most of my time with music and reading and playing video games.
-            </p>
-            <p>
-                Villanova University is my alma mater. I graduated undergrad in 2010 and got an accounting job with KPMG in their Audit-Financial Services group. After 3 years and, more importantly, 3 busy seasons, I decided to call it quits and I left that position without anything else lined up. After about 4-5 weeks I interviewed with NYU Langone Medical Center for an analyst position on the Transformation team. This was a new and exciting opportunity for me rooted in change management and business process improvement. After 2.5 years on that team, my boss and I were on a very difficult project and she ended up quitting. I was moved to a financial operations team and did research/education finance work for about a year before telling my manager I needed to do something different. Luckily he allowed me to stay on the team but transitioned almostd all of my financial operations responsibilities to my colleagues and allowed me to form a new position, Data Management Specialist, where I am able to work on report automation and process improvement across our finance teams.
-            </p>
-            <p>
-                It has been a great experience so far, but I am very excited to see where I end up after this boot camp is through. Coding and software development has always been an interest of mine, and I am happy I finally took the leap and started this program.
-            </p>
-        </about>    
+        <!-- header containing my name and the main navigation to the right  -->
+        <section class="header">
+            <h1 id="name">Tom Rennhack</h1>
+            <ul id="navigation">
+                <li id="contact-nav">
+                        <a href="contact.html">Contact</a>
+                </li>
+                <li id="portfolio-nav">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li id="about-nav"> 
+                        <a href="index.html">About</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- section containing the part below the heading -->
+        <section class="main">
+            
+            <!-- create a sub-division for the floating meat -->
+            <div class="the-meat">
+
+                <!-- enter the About Me page title -->
+                <h2 id="page-title">About Me (...or the lyrics to Thunder Road)</h2>
+                    
+                <!-- enter a profile pic here -->
+                <img src="assets/images/profile pic.jpg" alt="Image of Tom" id="pic" width="200px">
+                
+                <!-- enter a few paragraphs about yourself here, or the lyrics to Thunder Road... -->
+                <div id="para">
+                    <p>
+                        The screen door slams, Mary's dress waves. Like a vision she dances across the porch as the radio plays. Roy Orbison singing for the lonely, hey that's me and I want you only, don't turn me home again I just can't face myself alone again. Don't run back inside, darling, you know just what I'm here for. So you're scared and you're thinking that maybe we ain't that young anymore. Show a little faith, there's magic in the night. You ain't a beauty but hey you're alright, oh and that's alright with me.
+                    </p><br> 
+                    <p>
+                        You can hide beneath your covers and study your pain, make crosses from your lovers, throw roses in the rain, waste your summer praying in vain for a savior to rise from these streets. Well now I'm no hero, thats understood. All the redemption I can offer, girl, is beneath this dirty hood. With a chance to make it good somehow, hey what else can we do now except roll down the window and let the wind blow back your hair. Well the night's busting open these two lanes can take us anywhere. We got one last chance to make it real, to trade in these wings on some wheels. Climb in back, heaven's waiting down on the tracks. Oh-oh come take my hand, we're riding out tonight to case the promised land. Oh-oh-oh oh Thunder Road, oh Thunder Road, oh Thunder Road. Lying out there like a killer in the sun. Hey I know it's late, we can make it if we run. Oh-oh-oh oh Thunder Road. Sit tight. Take hold. Thunder Road!
+                    </p><br>
+                    <p>
+                        Well I got this guitar and I learned how to make it talk, and my car's out back if you're willing to take that long walk from your front porch to my front seat, the door's open but the ride ain't free, and I know you're lonely for words that I ain't spoken, but tonight we'll be free, all the promises will be broken. There were ghosts in the eyes of all the boys you sent away. They haunt this dusty beach road in the skeleton frames of burned our Chevrolets. They scream your name at night in the street. Your graduation gown lies in rags at their feet, and in the lonely cool before dawn you hear their engines roaring on, but when you get to teh porch they're gone on the wind, so Mary, climb in. It's a town full of losers, I'm pulling outta here to win!
+                    </p><br>
+                </div>
+
+                <!-- make some space before the footer -->
+                <br><br><br><br><br><br>
+            </div>
+        </section>
+        
+        <!-- enter a footer here -->
+        <footer>
+            First homework assignment for Full Stack Flex Coding Boot Camp 2019.
+        </footer>  
     </body>
 </html>
